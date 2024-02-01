@@ -1,0 +1,40 @@
+<div class="logo">
+    <a href="index.html">華登建設</a>
+</div>
+
+
+<nav>
+    <ul>
+        <li>
+            <a href="aboutus.html">關於華登</a>
+        </li>
+        <li>
+            <a href="works.html">個案作品</a>
+        </li>
+        <li>
+            <a href="news.html">最新消息</a>
+        </li>
+        <li>
+            <a href="contactus.html">聯絡我們</a>
+        </li>
+    </ul>
+
+
+    <button id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</nav>
+
+
+<Script>
+    $(document).ready(function () {
+
+        $("#menu-toggle").click(function () {
+            $("#menu").slideToggle();
+            $("#menu-toggle").toggleClass("active");
+        });
+
+    });
+</Script>

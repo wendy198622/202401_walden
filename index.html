@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>華登建設官網</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<!-- <link rel="icon" href="img/logo.ico"> -->
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/wow.min.js"></script>
+</head>
+
+<body>
+	<header id="header"></header>
+
+	<section>
+		<div class="theme theme_kv">
+			<div class="photo slider">
+				<img src="img/KV1.jpg" alt="">
+				<img src="img/KV2.jpg" alt="">
+				<img src="img/KV3.jpg" alt="">
+			</div>
+			<div class="brand">
+				<img src="img/logo.svg" alt="">
+				<h2>華登建設</h2>
+				<p>walden construction co.</p>
+			</div>
+		</div>
+		<div class="theme theme_works">
+			<div class="container">
+				<h3>-個案作品-</h3>
+				<div class="title_en">WORKS</div>
+				<div class="worksgroup">
+					<div class="worksitem">
+						<div class="title">
+							<div class="year">2023</div>
+							<h4>華登新城峰</h4>
+						</div>
+						<div class="photo">
+							<img src="img/works.jpg" alt="">
+						</div>
+						<div class="info">
+							<h5>航空城計畫唯一，低密度純住宅區</h5>
+							<p>桃園航空城、亞洲矽谷計畫、前瞻基礎建設三箭齊發，五大產業園區同力加持，與大園、青埔形成三核匯聚的鼎足之勢；匯集國內醫學大學、生技產業等研發產能的國際醫療研發中心亦將坐落於其中。如果上一次錯過了青埔，航空城客運重劃園區絕對是不能錯過的黃金起漲點。</p>
+						</div>
+						<div class="link">
+							<a href="#">View More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="theme theme_news">
+			<div class="container">
+				<div class="topic">
+					<h3>最新消息</h3>
+					<div class="title_en">NEWS</div>
+				</div>
+				<div class="newsgroup">
+					<div class="newsitem">
+						<a href="newspage.html">
+							<div class="date">2022.02.25</div>
+							<p>華登建設投資興建，基地位於大園區環區西路與科二街，預計2022年4月公開銷售。</p>
+						</a>
+					</div>
+					<div class="newsitem">
+						<a href="newspage.html">
+							<div class="date">2017.12.20</div>
+							<p>由華登建設所投資興建的「644坪644坪華登天囍」，地點位於尖山路122號，基地面積644坪644坪644坪644坪</p>
+						</a>
+					</div>
+					<div class="newsitem">
+						<a href="newspage.html">
+							<div class="date">2022.02.25</div>
+							<p>華登建設投資興建，基地位於大園區環區西路與科二街，預計2022年4月公開銷售。</p>
+						</a>
+					</div>
+					<div class="newsitem">
+						<a href="newspage.html">
+							<div class="date">2017.12.20</div>
+							<p>由華登建設所投資興建的「華登天囍」，地點位於尖山路122號，基地面積644坪644坪644坪644坪</p>
+						</a>
+					</div>
+				</div>
+				<div class="link">
+					<a href="#">View More</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="theme theme_contactus">
+			<div class="container">
+				<div class="topic">
+					<h3>聯絡我們</h3>
+					<div class="title_en">Contact us</div>
+				</div>
+				<div class="contactusgroup">
+					<div class="contactus_form">
+						<p>若您有任何客服意見留言、購屋及建案相關問題詢問，<br>
+							歡迎您填寫左方表單與我們聯絡。<span>* 欄位表示必填</span></p>
+						<div class="formgroup">
+							<div class="item wow fadeInUp" data-wow-delay=".3s">
+								<label for="name">姓名<span>*</span></label>
+								<input type="text" v-model="name" name="name" placeholder="" required />
+							</div>
+							<div class="item" data-wow-delay=".7s">
+								<label for="phone">連絡電話<span>*</span></label>
+								<input type="text" v-model="phone" name="phone" placeholder="" required />
+							</div>
+							<div class="item wow fadeInUp" data-wow-delay=".5s">
+								<label for="name">預約個案<span>*</span></label>
+								<select>
+									<option>請選擇建案</option>
+									<option>AAA</option>
+									<option>BBB</option>
+									<option>CCC</option>
+								</select>
+							</div>
+							<div class="item wow fadeInUp" data-wow-delay=".5s">
+								<label for="name">聯絡時段<span>*</span></label>
+								<select>
+									<option>請選擇時段</option>
+									<option>8:00-12:00</option>
+									<option>12:00-17:00</option>
+									<option>17:00-22:00</option>
+								</select>
+							</div>
+							<div class="item" data-wow-delay="1s">
+								<label for="email">E-mail <span>*</span></label>
+								<input type="text" v-model="email" name="email" placeholder="" required />
+							</div>
+							<div class="item" data-wow-delay="1.3s">
+								<label for="message">留言</label>
+								<textarea id="message" v-model="message" name="message" required></textarea>
+							</div>
+							<div class="item noline">
+								<input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
+								<label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="#">隱私權政策規範</a></label>
+							</div>
+							<button class="send">submit</button>
+						</div>
+					</div>
+					<div class="contactus_photo">
+						<img src="img/contactus.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="popup popup_send">
+		<div class="popup_content popup_message">您已送出資訊，我們將與您聯繫</div>
+	</div>
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		new WOW().init();
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+        
+        $('.send').on('click', function () {
+            $('.popup_send').addClass('is_acted');
+            setTimeout(() => {
+                $('.popup_send').removeClass('is_acted');
+            }, 6000)
+        });
+	})
+
+
+	//參考
+	!function() {
+		$(".slider").on("init", (function() {
+			$('.slick-slide[data-slick-index="0"]').addClass("slide-animation")
+		}
+		)).slick({
+			arrows: !1,
+			dots: !1,
+			autoplay: !0,
+			autoplaySpeed: 8e3,
+			speed: 2400,
+			fade: !0,
+			pauseOnFocus: !1,
+			pauseOnHover: !1,
+			pauseOnDotsHover: !1,
+			swipe: !0,
+			swipeToSlide: !1,
+			slidesToShow: 1,
+			infinite: !0
+		}).on("beforeChange", (function(i, e, t, n) {
+			var s = $(".slick-slide").length;
+			$('.slick-slide[data-slick-index="' + (t - 1) + '"]').removeClass("slide-animation"),
+			$('.slick-slide[data-slick-index="' + n + '"]').addClass("slide-animation"),
+			0 == t && $('.slick-slide[data-slick-index="' + (s - 1) + '"]').removeClass("slide-animation")
+		}
+		)),
+		$(".slider").on("touchmove", (function(i, e, t, n) {
+			$(".slider").slick("slickPlay")
+		}
+		))
+	}();
+
+
+</script>
+</html>

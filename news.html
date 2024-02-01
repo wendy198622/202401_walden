@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>華登建設官網</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<!-- <link rel="icon" href="img/logo.ico"> -->
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/contactus.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/news.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/wow.min.js"></script>
+</head>
+
+<body>
+	<header id="header"></header>
+
+	<section>
+		<div class="theme themepage_title">
+			<div class="container">
+				<div class="topic">
+					<h3>最新消息</h3>
+					<div class="title_en">News</div>
+				</div>
+			</div>
+		</div>
+		<div class="theme theme_news">
+			<div class="container">
+				<div class="newsgroup">
+					<div class="newsitem">
+                        <a href="newspage.html">
+					    	<div class="date">2022.02.25</div>
+				    		<p>華登建設投資興建，基地位於大園區環區西路與科二街，預計2022年4月公開銷售。</p>
+                        </a>
+                    </div>
+					<div class="newsitem">
+                        <a href="newspage.html">
+					    	<div class="date">2017.12.20</div>
+				    		<p>由華登建設所投資興建的「644坪644坪華登天囍」，地點位於尖山路122號，基地面積644坪644坪644坪644坪</p>
+                        </a>
+                    </div>
+					<div class="newsitem">
+                        <a href="newspage.html">
+					    	<div class="date">2022.02.25</div>
+				    		<p>華登建設投資興建，基地位於大園區環區西路與科二街，預計2022年4月公開銷售。</p>
+                        </a>
+                    </div>
+					<div class="newsitem">
+                        <a href="newspage.html">
+					    	<div class="date">2017.12.20</div>
+				    		<p>由華登建設所投資興建的「華登天囍」，地點位於尖山路122號，基地面積644坪644坪644坪644坪</p>
+                        </a>
+                    </div>
+				</div>
+                <div class="link more_item">
+                    <a href="#">View More</a>
+				</div>
+            </div>
+		</div>
+
+	</section>
+
+	<div class="popup popup_send">
+		<div class="popup_content popup_message">您已送出資訊，我們將與您聯繫</div>
+	</div>
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		new WOW().init();
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+
+        $('.send').on('click', function () {
+            $('.popup_send').addClass('is_acted');
+            setTimeout(() => {
+                $('.popup_send').removeClass('is_acted');
+            }, 6000)
+        });
+
+	})
+
+</script>
+</html>

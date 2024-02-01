@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>華登建設官網</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<!-- <link rel="icon" href="img/logo.ico"> -->
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/contactus.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/contactus.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/wow.min.js"></script>
+</head>
+
+<body>
+	<header id="header"></header>
+
+	<section>
+		<div class="theme themepage_title">
+			<div class="container">
+				<div class="topic">
+					<h3>聯絡我們</h3>
+					<div class="title_en">Contact us</div>
+				</div>
+			</div>
+		</div>
+		<div class="theme theme_contactus">
+			<div class="container">
+				<div class="contactusgroup">
+					<div class="contactus_form">
+						<p>若您有任何客服意見留言、購屋及建案相關問題詢問，<br>
+							歡迎您填寫左方表單與我們聯絡。<span>* 欄位表示必填</span></p>
+						<div class="formgroup">
+							<div class="item wow fadeInUp" data-wow-delay=".3s">
+								<label for="name">姓名<span>*</span></label>
+								<input type="text" v-model="name" name="name" placeholder="" required />
+							</div>
+							<div class="item" data-wow-delay=".7s">
+								<label for="phone">連絡電話<span>*</span></label>
+								<input type="text" v-model="phone" name="phone" placeholder="" required />
+							</div>
+							<div class="item wow fadeInUp" data-wow-delay=".5s">
+								<label for="name">預約個案<span>*</span></label>
+								<select>
+									<option>請選擇建案</option>
+									<option>AAA</option>
+									<option>BBB</option>
+									<option>CCC</option>
+								</select>
+							</div>
+							<div class="item wow fadeInUp" data-wow-delay=".5s">
+								<label for="name">聯絡時段<span>*</span></label>
+								<select>
+									<option>請選擇時段</option>
+									<option>8:00-12:00</option>
+									<option>12:00-17:00</option>
+									<option>17:00-22:00</option>
+								</select>
+							</div>
+							<div class="item" data-wow-delay="1s">
+								<label for="email">E-mail <span>*</span></label>
+								<input type="text" v-model="email" name="email" placeholder="" required />
+							</div>
+							<div class="item" data-wow-delay="1.3s">
+								<label for="message">留言</label>
+								<textarea id="message"v-model="message" name="message" required></textarea>
+							</div>
+							<div class="item noline">
+								<input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
+								<label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="#">隱私權政策規範</a></label>
+							</div>
+							<button class="send">submit</button>
+						</div>
+					</div>
+					<div class="contactus_photo">
+						<img src="img/contactus.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div class="popup popup_send">
+		<div class="popup_content popup_message">您已送出資訊，我們將與您聯繫</div>
+	</div>
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		new WOW().init();
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+
+        $('.send').on('click', function () {
+            $('.popup_send').addClass('is_acted');
+            setTimeout(() => {
+                $('.popup_send').removeClass('is_acted');
+            }, 6000)
+        });
+
+	})
+
+</script>
+</html>

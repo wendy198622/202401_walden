@@ -1,0 +1,98 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 98;
+    padding: 66px 108px;
+    overflow: hidden;
+
+    .logo{
+        float: left;
+        a{
+            font-size: 30px;
+            color: $_color1;
+            font-family: $_font1;
+            font-weight: 600;
+            letter-spacing: 8px;
+        }
+    }
+
+    nav{
+        float: right;
+        overflow: hidden;
+
+        ul{
+            float: left;
+            overflow: hidden;
+            li{
+                float: left;
+                padding: 0 44px;
+                font-size: 20px;
+                border-right: 1px solid $_color1;
+                a{
+                    color: $_color1;
+                    font-family: $_font1;
+                    line-height: 30px;
+                    letter-spacing: 5px;
+                }
+
+                &:last-child{
+                    padding-right: 0;
+                    border-right: 0;
+                }
+            }
+        }
+
+        #menu-toggle{
+            background-color: transparent;
+            float: right;
+            padding: 0;
+            // padding: 18px 24px;
+            // margin-right: 16px;
+            // transition: all .1s;
+            display: none;
+    
+            span{
+                display: block;
+                width: 34px;
+                height: 2px;
+                margin: 6px 0;
+                background-color: $_color1;
+                position: relative;
+                transition: all .3s;
+            }
+    
+            &:hover{
+                cursor: pointer;
+            }
+    
+            &.active{
+                background-color: #c9a063;
+    
+                span{
+                    background-color: #000;
+    
+                    &:nth-child(2){
+                        background-color: transparent;
+                    }
+    
+                    &:nth-child(1){
+                        transform: rotate(-225deg);
+                        margin-top: 45%;
+                    }
+    
+                    &:nth-child(3){
+                        transform: rotate(225deg);
+                        margin-top: -45%;
+                    }
+                }
+    
+                h6{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    
+}

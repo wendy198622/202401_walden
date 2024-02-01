@@ -1,0 +1,184 @@
+@import '_setting';
+@import '_header';
+@import '_footer';
+
+.theme{
+    .container{
+        width: 1300px;
+        margin: 0 auto;
+        position: relative;
+        display: table;
+        
+        h3{
+            color: $_color1;
+            font-size: 30px;
+            font-family: $_font1;
+            font-weight: 600;
+            text-align: left;
+            letter-spacing: 5px;
+        }
+        .title_en{
+            font-family: $_font2;
+            font-size: 18px;
+            color: $_color1;
+            letter-spacing: 2px;
+            opacity: 0.6;
+            text-align: left;
+            margin-top: 12px;
+            text-transform: uppercase;
+        }
+        .link.more_item{
+            width: 246px;
+            margin: 90px auto 0;
+            text-align: center;
+            display: block;
+            border: 1px solid $_color1;
+            border-radius: 21px;
+            overflow: hidden;
+            position: relative;
+            bottom: auto;
+            left: auto;
+    
+            a{
+                line-height: 2.2;
+                transition: all 1s;
+                position: relative;
+                z-index: 2;
+            }
+            &:before{
+                content:"";
+                display: block;
+                width: 0%;
+                height: 100%;
+                background: $_color1;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: all 1s;
+                z-index: 1;
+            }
+            &:after{
+                display: none;
+            }
+
+            &:hover{
+                a{
+                    color: #000;
+                }
+                &:before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.themepage_title{
+    height: 346px;
+    background: url(../img/news_titlebg.jpg) center top no-repeat;
+    background-size: cover;
+    padding-top: 180px;
+    .topic{
+        width: 340px;
+        float: left;
+
+    }
+    p{
+        width: calc(100% - 340px);
+        float: right;
+        font-size: 18px;
+        line-height: 2;
+        text-align: left;
+        color: $_color1;
+        text-transform: uppercase;
+        font-weight: 200;
+        margin-top: -8px;
+        letter-spacing: 2px;
+    }
+}
+
+.theme_news{
+    padding: 140px 0 100px;
+    background: $_darkbg;
+    .newsgroup{
+        width: 100%;
+        float: unset;
+    }
+}
+
+.themepage_news{
+
+    .pagenews_group{
+
+        .title{
+            overflow: hidden;
+            border-bottom: 2px dotted rgba(255,255,255,.5);
+
+            h5{
+                width: calc(100% - 120px);
+                float: left;
+                font-size: 26px;
+                line-height: 1.6;
+                text-align: left;
+                color: $_color1;
+                font-family: $_font1;
+                font-weight: 300;
+                letter-spacing: 2px;
+            }
+            .date{
+                width: 120px;
+                float: right;
+                font-size: 18px;
+                line-height: 2.4;
+                text-align: right;
+                color: $_color1;
+                font-family: $_font1;
+                font-weight: 100;
+                letter-spacing: 2px;
+            }
+        }
+
+        .content{
+            p{
+                width: 100%;
+                font-size: 18px;
+                line-height: 2;
+                text-align: left;
+                color: $_color1;
+                font-family: $_font1;
+                font-weight: 100;
+                letter-spacing: 2px;
+                margin-top: 40px;
+            }
+
+            .group{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                // align-items: flex-start;
+                .item{
+                    width: 100%;
+                    margin-right: 60px;
+                    position: relative;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+
+                    img{
+                        margin-top: 40px;
+                    }
+
+                    span{
+                        position: absolute;
+                        right: 10px;
+                        bottom: 10px;
+                        color: $_color1;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
