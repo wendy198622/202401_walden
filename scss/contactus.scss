@@ -2,97 +2,37 @@
 @import '_header';
 @import '_footer';
 
-.theme{
-    .container{
-        width: 1300px;
-        margin: 0 auto;
-        position: relative;
-        display: table;
-        
-        h3{
-            color: $_color1;
-            font-size: 30px;
-            font-family: $_font1;
-            font-weight: 600;
-            text-align: left;
-            letter-spacing: 5px;
+.themepage_contactus{
+    padding: 0;
+    .themepage_top_contactus{
+        .topic{
+            width: 340px;
+            height: auto;
+            position: static;
+            right: auto;
+            top: auto;
+            h3{
+                writing-mode: unset;
+                position: static;
+                right: auto;
+                top: auto;
+            }
+            .title_en{
+                font-size: 18px;
+                transform: rotate(0deg);
+                position: static;
+                right: auto;
+                top: auto;
+            }
         }
-        .title_en{
-            font-family: $_font2;
-            font-size: 18px;
-            color: $_color1;
-            letter-spacing: 2px;
-            opacity: 0.6;
-            text-align: left;
-            margin-top: 12px;
-            text-transform: uppercase;
-        }
+
     }
 }
 
-.themepage_title{
-    height: 540px;
-    background: url(../img/contactus_titlebg.jpg) center top no-repeat;
-    background-size: cover;
-    padding-top: 295px;
-    .topic{
-        width: 340px;
-        float: left;
-
-    }
-    p{
-        width: calc(100% - 340px);
-        float: right;
-        font-size: 18px;
-        line-height: 2;
-        text-align: left;
-        color: $_color1;
-        text-transform: uppercase;
-        font-weight: 200;
-        margin-top: -8px;
-        letter-spacing: 2px;
-    }
-}
-
-.themepage_content{
-    padding: 156px 0;
-    background: $_darkbg;
-    overflow: hidden;
-    h4{
-        width: 100%;
-        float: left;
-        font-size: 26px;
-        line-height: 1.6;
-        text-align: left;
-        color: $_color1;
-        font-family: $_font1;
-        font-weight: 300;
-        letter-spacing: 2px;
-    }
-    p{
-        width: 100%;
-        float: left;
-        font-size: 18px;
-        line-height: 2;
-        text-align: left;
-        color: $_color1;
-        font-family: $_font1;
-        font-weight: 100;
-        letter-spacing: 2px;
-        margin-top: 28px;
-    }
-    .photo{
-        width: 50%;
-        float: left;
-        position: relative;
-        margin-top: 48px;
-        img{}
-        span{
-            position: absolute;
-            right: 10px;
-            bottom: 10px;
-            color: $_color1;
-            font-size: 14px;
+.themepage_content_contactus{
+    .contactusgroup{
+        .contactus_photo{
+            margin-top: 60px;
         }
     }
 }

@@ -5,6 +5,12 @@ header{
     z-index: 98;
     padding: 66px 108px;
     overflow: hidden;
+    @media (max-width:1400px){
+        padding: 66px 40px;
+    }
+    @media (max-width:1080px){
+        padding: 40px;
+    }
 
     .logo{
         float: left;
@@ -24,26 +30,62 @@ header{
         ul{
             float: left;
             overflow: hidden;
+            @media (max-width:1080px){
+                display: none;
+                max-width: 50%;
+                float: unset;
+                position: fixed;
+                right: 0;
+                top: 0;
+                background: $_graybg;
+                padding: 72px 60px;
+            }
             li{
                 float: left;
                 padding: 0 44px;
                 font-size: 20px;
-                border-right: 1px solid $_color1;
+                @media (max-width:1080px){
+                    width: 100%;
+                    padding: 20px 0;
+                    text-align: center;
+                    position: relative;
+                }
+
+                &:last-child{
+                    padding-right: 0;
+                }
+
                 a{
                     color: $_color1;
                     font-family: $_font1;
                     line-height: 30px;
                     letter-spacing: 5px;
                 }
+            }
 
-                &:last-child{
-                    padding-right: 0;
-                    border-right: 0;
+            li + li{
+                border-left: 1px solid $_color1;
+                @media (max-width:1080px){
+                    border-left: 0;
+
+                    &:before{
+                        content: "";
+                        width: 100%;
+                        height: 1px;
+                        background: url(../img/line.png) center top no-repeat;
+                        background-size: cover;
+                        position: absolute;
+                        top: 0;
+                        // left: 50%;
+                        // transform: translateX(-50%);
+                        display: block;
+                    }
                 }
             }
         }
 
         #menu-toggle{
+            height: 30px;
             background-color: transparent;
             float: right;
             padding: 0;
@@ -51,6 +93,9 @@ header{
             // margin-right: 16px;
             // transition: all .1s;
             display: none;
+            @media (max-width:1080px){
+                display: block;
+            }
     
             span{
                 display: block;
@@ -67,23 +112,21 @@ header{
             }
     
             &.active{
-                background-color: #c9a063;
     
                 span{
-                    background-color: #000;
     
                     &:nth-child(2){
                         background-color: transparent;
                     }
     
                     &:nth-child(1){
-                        transform: rotate(-225deg);
-                        margin-top: 45%;
+                        transform: rotate(-210deg);
+                        margin-top: 10px;
                     }
     
                     &:nth-child(3){
-                        transform: rotate(225deg);
-                        margin-top: -45%;
+                        transform: rotate(210deg);
+                        margin-top: -16px;
                     }
                 }
     
