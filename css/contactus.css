@@ -857,6 +857,11 @@ footer .copyright {
   }
 }
 
+span.animate {
+  color: #fff;
+  font-family: "SweiSpringCJKjp", serif;
+}
+
 .themepage_contactus {
   padding: 0;
 }
@@ -888,6 +893,6 @@ footer .copyright {
 }
 
 .themepage_content_contactus .contactusgroup .contactus_photo {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=contactus.css.map */

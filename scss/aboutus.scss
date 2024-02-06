@@ -2,6 +2,11 @@
 @import '_header';
 @import '_footer';
 
+span.animate{
+    color: #fff;
+    font-family: $_font1;
+}
+
 .themepage_content_aboutus{
     h5{
         width: 100%;

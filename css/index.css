@@ -857,6 +857,11 @@ footer .copyright {
   }
 }
 
+span.animate {
+  color: #fff;
+  font-family: "SweiSpringCJKjp", serif;
+}
+
 .home_kv {
   position: relative;
   padding: 0;
@@ -888,6 +893,8 @@ footer .copyright {
   bottom: 0;
   left: 0;
   margin: auto;
+  -webkit-animation: logo_ani 3s 1s both;
+          animation: logo_ani 3s 1s both;
 }
 
 @media (max-width: 1400px) {
@@ -1015,6 +1022,7 @@ footer .copyright {
   width: 200px;
   height: 200px;
   position: absolute;
+  z-index: 5;
   right: 0;
   top: -30px;
   overflow: hidden;
@@ -1039,6 +1047,11 @@ footer .copyright {
 
 .home_works .content .worksitem .info, .themepage_works .content .worksitem .info {
   margin-top: 52px;
+}
+
+.home_works .content .worksitem .photo, .themepage_works .content .worksitem .photo {
+  -webkit-animation: photo_ani 3s 1.5s both;
+          animation: photo_ani 3s 1.5s both;
 }
 
 .home_news, .themepage_news {
@@ -1179,6 +1192,7 @@ footer .copyright {
   width: 200px;
   height: 200px;
   position: absolute;
+  z-index: 5;
   right: 0;
   top: -30px;
   overflow: hidden;
@@ -1392,6 +1406,8 @@ footer .copyright {
   float: right;
   background: url(../img/contactus.jpg) center top no-repeat;
   background-size: cover;
+  -webkit-animation: photo_ani 3s 1.5s both;
+          animation: photo_ani 3s 1.5s both;
 }
 
 @media (max-width: 1080px) {
@@ -1427,6 +1443,58 @@ footer .copyright {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+@-webkit-keyframes logo_ani {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@keyframes logo_ani {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@-webkit-keyframes photo_ani {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@keyframes photo_ani {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
 }
 /*# sourceMappingURL=index.css.map */

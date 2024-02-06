@@ -2,6 +2,11 @@
 @import '_header';
 @import '_footer';
 
+span.animate{
+    color: #fff;
+    font-family: $_font1;
+}
+
 .themepage_contactus{
     padding: 0;
     .themepage_top_contactus{
@@ -32,7 +37,7 @@
 .themepage_content_contactus{
     .contactusgroup{
         .contactus_photo{
-            margin-top: 60px;
+            margin-top: 20px;
         }
     }
 }

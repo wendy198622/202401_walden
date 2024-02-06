@@ -2,6 +2,11 @@
 @import '_header';
 @import '_footer';
 
+span.animate{
+    color: #fff;
+    font-family: $_font1;
+}
+
 .themepage_works{
     padding: 0;
     .themepage_content_works{

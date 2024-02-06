@@ -3,6 +3,10 @@
 @import '_footer';
 
 
+span.animate{
+    color: #fff;
+    font-family: $_font1;
+}
 
 .home_kv{
     position: relative;
@@ -26,7 +30,7 @@
         bottom: 0;
         left: 0;
         margin: auto;
-        // outline: 1px solid yellow;
+        animation: logo_ani 3s 1s both;
         @media (max-width:1400px){
             width: 360px;
             height: 370px;
@@ -110,6 +114,7 @@
                 width: 200px;
                 height: 200px;
                 position: absolute;
+                z-index: 5;
                 right: 0;
                 top: -30px;
                 overflow: hidden;
@@ -129,6 +134,9 @@
             }
             .info{
                 margin-top: 52px;
+            }
+            .photo{
+                animation: photo_ani 3s 1.5s both;
             }
         }
     }
@@ -244,6 +252,7 @@
         width: 200px;
         height: 200px;
         position: absolute;
+        z-index: 5;
         right: 0;
         top: -30px;
         overflow: hidden; 
@@ -406,6 +415,7 @@
             float: right;
             background: url(../img/contactus.jpg) center top no-repeat;
             background-size: cover;
+            animation: photo_ani 3s 1.5s both;
             @media (max-width:1080px){
                 width: 100%;
                 height: 0;
@@ -431,5 +441,29 @@
     100% {
         -webkit-transform: scale(1);
         transform: scale(1)
+    }
+}
+
+@keyframes logo_ani{
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes photo_ani{
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0px);
     }
 }

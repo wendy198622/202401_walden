@@ -857,6 +857,11 @@ footer .copyright {
   }
 }
 
+span.animate {
+  color: #fff;
+  font-family: "SweiSpringCJKjp", serif;
+}
+
 .themepage_works {
   padding: 0;
 }
