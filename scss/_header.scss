@@ -14,12 +14,17 @@ header{
 
     .logo{
         float: left;
+        transition: all .3s;
         a{
             font-size: 30px;
             color: $_color1;
             font-family: $_font1;
             font-weight: 600;
             letter-spacing: 8px;
+        }
+
+        &:hover{
+            opacity: 0.4;
         }
     }
 
@@ -60,6 +65,11 @@ header{
                     font-family: $_font1;
                     line-height: 30px;
                     letter-spacing: 5px;
+                    transition: all .3s;
+
+                    &:hover{
+                        opacity: 0.4;
+                    }
                 }
             }
 

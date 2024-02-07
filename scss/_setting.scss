@@ -284,7 +284,7 @@ section{
     width: 1300px;
     margin: 0 auto;
     position: relative;
-    display: table;
+    // display: table;
     @media (max-width:1400px){
         width: 100%;
         padding: 0 40px;
@@ -337,7 +337,7 @@ section{
 }
 .content{
     width: 100%;
-    display: table;
+    // display: table;
 
     &.themepage_content_aboutus{
         padding: 156px 0;
@@ -411,6 +411,7 @@ section{
     display: inline-block;
     position: relative;
     opacity: 0.6;
+    transition: all .3s;
     @media (max-width:960px){
         display: block;
         margin: 32px auto 0;
@@ -423,6 +424,10 @@ section{
         line-height: 1.8;
         color: $_color1;
         letter-spacing: 2px;
+    }
+
+    &:hover{
+        opacity: 0.4;
     }
 }
 
@@ -480,4 +485,16 @@ section{
     display: block;
     overflow: hidden;
     margin: 0 auto;
+}
+
+
+span.animate{
+    color: #fff;
+    font-family: $_font1;
+    margin-right: -4px;
+}
+span.animate_e{
+    color: #fff;
+    font-family: $_font2;
+    margin-right: -4px;
 }

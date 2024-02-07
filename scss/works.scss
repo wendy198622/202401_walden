@@ -2,10 +2,6 @@
 @import '_header';
 @import '_footer';
 
-span.animate{
-    color: #fff;
-    font-family: $_font1;
-}
 
 .themepage_works{
     padding: 0;
@@ -415,4 +411,22 @@ table {
 	color: #78909C;
 	font-weight: 400;
 	font-size: 0.75rem;
+}
+
+.slick-dots{
+    bottom: 30px;
+}
+
+.slick-dots li button:before{
+    font-size: 10px;
+    line-height: 25px;
+    color: #fff;
+    opacity: 0.5;
+    text-shadow: 0 0 5px rgba(0,0,0,.9);
+}
+.slick-dots li.slick-active button:before{
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    opacity: 1;
 }

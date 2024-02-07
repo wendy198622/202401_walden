@@ -316,7 +316,6 @@ section {
   width: 1300px;
   margin: 0 auto;
   position: relative;
-  display: table;
 }
 
 @media (max-width: 1400px) {
@@ -383,7 +382,6 @@ section {
 
 .content {
   width: 100%;
-  display: table;
 }
 
 .content.themepage_content_aboutus {
@@ -470,6 +468,8 @@ section {
   display: inline-block;
   position: relative;
   opacity: 0.6;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 @media (max-width: 960px) {
@@ -486,6 +486,10 @@ section {
   line-height: 1.8;
   color: #ffffff;
   letter-spacing: 2px;
+}
+
+.link:hover {
+  opacity: 0.4;
 }
 
 .link_underline:after {
@@ -545,6 +549,18 @@ section {
   margin: 0 auto;
 }
 
+span.animate {
+  color: #fff;
+  font-family: "SweiSpringCJKjp", serif;
+  margin-right: -4px;
+}
+
+span.animate_e {
+  color: #fff;
+  font-family: "Avignonpro", serif;
+  margin-right: -4px;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -568,6 +584,8 @@ header {
 
 header .logo {
   float: left;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 header .logo a {
@@ -576,6 +594,10 @@ header .logo a {
   font-family: "SweiSpringCJKjp", serif;
   font-weight: 600;
   letter-spacing: 8px;
+}
+
+header .logo:hover {
+  opacity: 0.4;
 }
 
 header nav {
@@ -625,6 +647,12 @@ header nav ul li a {
   font-family: "SweiSpringCJKjp", serif;
   line-height: 30px;
   letter-spacing: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header nav ul li a:hover {
+  opacity: 0.4;
 }
 
 header nav ul li + li {
@@ -855,11 +883,6 @@ footer .copyright {
   footer .copyright {
     margin-top: 12px;
   }
-}
-
-span.animate {
-  color: #fff;
-  font-family: "SweiSpringCJKjp", serif;
 }
 
 .themepage_content_aboutus h5 {

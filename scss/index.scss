@@ -3,11 +3,6 @@
 @import '_footer';
 
 
-span.animate{
-    color: #fff;
-    font-family: $_font1;
-}
-
 .home_kv{
     position: relative;
     padding: 0;
@@ -186,6 +181,7 @@ span.animate{
                 line-height: 105px;
                 color: $_color1;
                 opacity: 0.6;
+                transition: all .3s;
                 @media (max-width:960px){
                     width: 140px;
                 }
@@ -206,6 +202,7 @@ span.animate{
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 1;
                 padding-right: 60px;
+                transition: all .3s;
                 @media (max-width:960px){
                     width: calc(100% - 140px);
                     padding-right: 0;
@@ -215,6 +212,12 @@ span.animate{
 
             &:last-child{
                 border-bottom: 2px dotted rgba(255,255,255,.5);
+            }
+
+            &:hover{
+                .date, p{
+                    opacity: 0.4;
+                }
             }
         }
     }
@@ -426,6 +429,9 @@ span.animate{
     }
 }
 
+.home_contactus .topic .title_en span.animate_e{
+    margin-right: -8px;
+}
 
 .slide-animation {
     -webkit-animation: slide-zoom 10s ease-out;
