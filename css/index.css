@@ -325,6 +325,12 @@ section {
   }
 }
 
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .themepage_top {
   background-position: left top;
   background-repeat: no-repeat;

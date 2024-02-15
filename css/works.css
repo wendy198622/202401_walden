@@ -325,6 +325,12 @@ section {
   }
 }
 
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .themepage_top {
   background-position: left top;
   background-repeat: no-repeat;
@@ -943,6 +949,27 @@ footer .copyright {
 
 .themepage_works .themepage_content_works .link.link_center_bottom {
   margin-top: 120px;
+}
+
+.themepage_works .themepage_content_works .link.link_center_bottom button {
+  background: transparent;
+  font-family: "Avignonpro", serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #ffffff;
+  letter-spacing: 2px;
+  padding: 2.6px 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.themepage_works .themepage_content_works .link.link_center_bottom:hover {
+  cursor: pointer;
+}
+
+.themepage_works .themepage_content_works .link.link_center_bottom:hover button {
+  color: #000;
+  z-index: 2;
 }
 
 .themepage_content_workspage .page_topic {

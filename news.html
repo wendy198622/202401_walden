@@ -52,7 +52,7 @@
 			</div>
 			<div class="content themepage_content_news">
 				<div class="container">
-					<div class="newsgroup">
+					<div class="newsgroup" id="newsgroup">
 						<div class="newsitem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
 							<a href="newspage.html">
 								<div class="date">2022.02.25</div>
@@ -79,7 +79,7 @@
 						</div>
 					</div>
 					<div class="link link_border link_center_bottom">
-						<a href="#">View More</a>
+						<a href="javascript:;" id="moreBtn">View More</a>
 					</div>
 				</div>
 			</div>
@@ -108,6 +108,22 @@
                 $('.popup_send').removeClass('is_acted');
             }, 6000)
         });
+
+
+		$('#moreBtn').click(function (e) {
+			$('#newsgroup').append('<div class="newsitem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">' +
+				'<a href="newspage.html">' +
+				'<div class="date">2022.02.25</div>' +
+				'<p>華登建設投資興建，基地位於大園區環區西路與科二街，預計2022年4月公開銷售。</p>' +
+				'</a>' +
+				'</div>');
+			$('#newsgroup').append('<div class="newsitem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">' +
+				'<a href="newspage.html">' +
+				'<div class="date">2017.12.20</div>' +
+				'<p>由華登建設所投資興建的「644坪644坪華登天囍」，地點位於尖山路122號，基地面積644坪644坪644坪644坪</p>' +
+				'</a>' +
+				'</div>');		
+		});
 
 	})
 
